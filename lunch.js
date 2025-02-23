@@ -13,10 +13,50 @@
  * in minutes.
  */
 
-const whatToDoForLunch = function(hungry, availableTime) {
-  console.log("I don't know what to do!");
-}
 
+// If you have less than 20 minutes, you want your program to tell you to pick up a snack or grab something you have ready at home.
+
+// If you have at least 20 minutes but no more than 30 (because you've been working hard and are ahead of schedule), you want your program to tell you that you deserve a break and should take time to cook a tasty meal.
+
+// If you have more than 30 minutes, you want your program to remind you that this is an intense program after all and you should probably reconsider.
+
+
+
+// CODE BEFORE REFACTORING
+// ===================================================================================================
+
+//const whatToDoForLunch = function(hungry, availableTime) {
+  
+// if (!hungry) {
+//  console.log("I am not hungry");
+//  return;
+//}  
+// if (availableTime < 20) {
+//  console.log("Pick up a snack or grab something you have ready at home.");
+
+//} else if (availableTime >= 20 && availableTime <= 30 ) { 
+//  console.log("You deserve a break and should take time to cook a tasty meal.");
+
+//} else if (availableTime > 30) {
+//  console.log("This is an intense program after all and you should probably reconsider.")
+//}
+//};
+// ===================================================================================================
+// FINAL CODE AFTER REFACTORING
+
+const whatToDoForLunch = function(hungry, availableTime) {
+  if (!hungry) {
+    console.log("I am not hungry.");
+    return;
+  }  
+  if (availableTime < 20) {
+    console.log("Pick up a snack or grab something you have ready at home.");
+  } else if (availableTime <= 30) { 
+    console.log("You deserve a break and should take time to cook a tasty meal.");
+  } else {
+    console.log("This is an intense program after all and you should probably reconsider.");
+  }
+};
 
 /*
  * This is some test runner code that's simply calling our whatToDoForLunch function
