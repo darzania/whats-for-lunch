@@ -1,33 +1,11 @@
-// CODE BEFORE REFACTORING
-// ===================================================================================================
-
-//const whatToDoForLunch = function(hungry, availableTime) {
-  
-// if (!hungry) {
-//  console.log("I am not hungry");
-//  return;
-//}
-// if (availableTime < 20) {
-//  console.log("Pick up a snack or grab something you have ready at home.");
-
-//} else if (availableTime >= 20 && availableTime <= 30 ) {
-//  console.log("You deserve a break and should take time to cook a tasty meal.");
-
-//} else if (availableTime > 30) {
-//  console.log("This is an intense program after all and you should probably reconsider.")
-//}
-//};
-// ===================================================================================================
-// FINAL CODE AFTER REFACTORING
-
 const whatToDoForLunch = function(hungry, availableTime) {
   if (!hungry) {
     console.log("I am not hungry.");
     return;
-  }
+  }  
   if (availableTime < 20) {
     console.log("Pick up a snack or grab something you have ready at home.");
-  } else if (availableTime <= 30) {
+  } else if (availableTime <= 30) { 
     console.log("You deserve a break and should take time to cook a tasty meal.");
   } else {
     console.log("This is an intense program after all and you should probably reconsider.");
